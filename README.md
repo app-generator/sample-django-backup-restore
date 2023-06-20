@@ -3,6 +3,13 @@
 Open-source **Django** project crafted on top of **[Material Kit](https://appseed.us/product/material-kit/django/)**, an open-source design from [Creative-Tim](https://www.creative-tim.com/?AFFILIATE=128200).
 The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
 
+<br />
+
+> Coding sample for: https://github.com/app-generator/docs/blob/main/docs/technologies/django/backup-restore.mdx
+
+<br />
+
+
 - 👉 [Django Material Kit](https://appseed.us/product/material-kit/django/) - `Product page`
 - 👉 [Django Material Kit](https://django-material-kit.appseed-srv1.com/) - `LIVE Demo`
 - 🛒 **[Django Material Kit PRO](https://appseed.us/product/material-kit2-pro/django/)** - `Premium Version`
