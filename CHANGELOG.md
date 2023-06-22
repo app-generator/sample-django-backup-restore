@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.8] 2023-06-22
+### Changes
+
+- Added [DB Backup/Restore](https://docs.appseed.us/technologies/django/backup-restore/) Mechanism
+
 ## [1.0.7] 2023-02-08
 ### Changes
 
