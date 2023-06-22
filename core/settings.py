@@ -31,7 +31,7 @@ if not SECRET_KEY:
 DEBUG = 'RENDER' not in os.environ
 
 # Docker HOST
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # Add here your deployment HOSTS
 CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:5085']
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 
     'theme_material_kit',
     "home",
+    'dbbackup',
 ]
 
 MIDDLEWARE = [
@@ -153,6 +154,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'
+DBBACKUP_STORAGE_OPTIONS = {'location': 'backup/'}
+# DBBACKUP_STORAGE = 'dbbackup.db.mysql.MysqlDumpConnector'
+DBBACKUP_CONNECTORS = {
+    'default': {
+        'USER': 'root',
+        'PASSWORD': 'neodynamics',
+        'HOST': 'localhost',
+    },
+}
 
 #if not DEBUG:
 #    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
